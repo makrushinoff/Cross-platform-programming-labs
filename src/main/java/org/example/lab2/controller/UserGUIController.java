@@ -6,7 +6,7 @@ import org.example.lab2.model.UserService;
 import java.util.List;
 import java.util.UUID;
 
-public class UserController {
+public class UserGUIController {
 
     private final UserService userService = new UserService();
 

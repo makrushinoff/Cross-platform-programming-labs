@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import org.example.lab2.controller.UserController;
+import org.example.lab2.controller.UserGUIController;
 import org.example.lab2.model.User;
 
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class GUI extends Application {
     private static final Integer PRIMARY_SCENE_WIDTH = 400;
     private static final Integer PRIMARY_SCENE_HEIGHT = 300;
 
-    private final UserController controller = new UserController();
+    private final UserGUIController controller = new UserGUIController();
 
     private Map<UUID, String> userMap = new HashMap<>();
 
@@ -33,7 +33,6 @@ public class GUI extends Application {
     public void start(Stage stage) throws Exception {
         this.setUpPrimaryStage(stage);
         stage.show();
-
     }
 
     private void setUpPrimaryStage(Stage primaryStage) {
